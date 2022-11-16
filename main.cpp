@@ -4,16 +4,31 @@ using namespace std;
 
 int main()
 {
-    float temperature;
-    cout << "Maukan temperature : "<< endl;
-    cin >> temperature;
-    if (temperature <= 0)
-    {
-        cout << "ice" << endl;
-    } else if (temperature > 100) {
-        cout << "gas" << endl;
-    } else {
-        cout << "liquid" << endl;
+    cout << "==== Daftar Menu ====" << endl;
+    cout << "1. Nasi Kerikil" << endl;
+    cout << "2. Rica Rica Bekicot" << endl;
+    cout << "3. Pepes Brotowali" << endl;
+    cout << "4. Kepiting Presto" << endl;
+
+    int x;
+    cout << "Masukan kode menu anda" << endl;
+    cin >> x;
+    switch (x){
+        case 1:
+            cout << "Nasi Kerikil";
+            break;
+        case 2:
+            cout << "Rica Rica Bekicot";
+            break;
+        case 3:
+            cout << "Pepes Brotowali";
+            break;
+        case 4:
+            cout << "Kepiting Presto";
+            break;
+        default:
+            cout << "Kode tidak ditemukan";
+
     }
-    return 0;
+     return 0;
 }
